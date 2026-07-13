@@ -1,0 +1,61 @@
+Azure Class-1
+==================
+
+Azure: Account Creation, Subscriptions, Resource Groups, VM (Linux & Windows)
+================================================================================
+
+First we need to create Azure free tier account with $200 credits for 1 month free only
+
+In here our account has free but in real time cloud admins will create free subscriptions like dev, test, pod etc
+
+in those subscriptions inside they will create a resources like virtual machines, vpc, vnet, databases, etc
+
+In aws we created all in together only 
+
+In aws billing we cant see the bill for required used ec2-instances
+
+In azure we can see it by creating a resources 
+
+Resource Group ------------> inside this we will create resource group ------------> in this resource group we will create servers, databases, networking part, storing
+
+if we want to do anything in Azure first of all we need to do create Subscription for it to do anything for it 
+under that subscription --------> we will do create resource group ------------> in this under resource group we will do create services like servers, etc
+
+go to Azure dashboard and login into it
+
+select search as subscription ------------> selected subscription -------> select add + -----------> subscription name: dev-sub ---------> review+create -------> create
+
+successfully created the subscription
+
+Basics
+Advanced
+Budget
+Tags
+Review + create
+A subscription is a container used to provision resources in Azure. It holds the details of all your resources like virtual machines (VM), databases, and more. When you create an Azure resource like a VM, you identify the subscription it belongs to. As you use the VM, the usage of the VM is aggregated and billed monthly.
+Subscription details
+Subscription name
+dev-sub
+Billing account
+Pranay Babu (94b16108-84de-5af4-4a3b-3ee074ee3b41:3565c8db-d24a-49e0-82a6-3b8b3129667c_2019-05-31)
+Billing profile
+Pranay Babu (LOID-FIIJ-BG7-PGB)
+Invoice section
+Pranay Babu (5f38ba56-7897-40e9-a64b-c3d4c8f4bb6e)
+Plan
+Microsoft Azure Plan
+Add a different type of subscription
+
+
+Now need to create a Resource Group ----------> search as Resource Group select create -------> subscription: select here above creaed dev-sub and select it ---------
+---------> resource group name: My-Dev-RG --------------> Region: select region here where to create i am taking here us-west-2 ---------> review+create ----------
+-------------> create
+
+if we want to delete above created resource group means -----> select created resoure group -------> delete resource group ---------> delete
+
+now if we want to create a server means can we create without a resource group ------> no
+
+In aws we selected EC2 service to create server
+
+In here Azure we will use virtual machines -----------> select virtual machines ---------> create again select virtual machine first option --------> select 
+subscription: in which subscription need to get created select here above created dev-sub ----------> 
